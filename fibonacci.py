@@ -11,9 +11,6 @@ def fibo_recur(n):
 
     return fibo_recur(n-1) + fibo_recur(n-2)
 
-n = int(input())
-print(fibo_recur(n))
-
 
 def fibo_dp(n, dp=dict()):
 
@@ -30,4 +27,7 @@ def fibo_dp(n, dp=dict()):
 
     return dp[n]
 
+a = int(input())
+print(fibo_dp(a))
+print(fibo_recur(a))
 
