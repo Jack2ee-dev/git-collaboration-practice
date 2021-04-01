@@ -14,3 +14,20 @@ def fibo_recur(n):
 n = int(input())
 print(fibo_recur(n))
 
+
+def fibo_dp(n, dp=dict()):
+
+    if n == 0:
+        return 0
+
+    if n == 1 or n == 2:
+        return 1
+
+    if n in dp:
+        return dp[n]
+
+    dp[n] = fibo_dp(n-1, dp) + fibo_dp(n-2, dp)
+
+    return dp[n]
+
+
