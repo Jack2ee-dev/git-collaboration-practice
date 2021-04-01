@@ -5,4 +5,5 @@ def hanoi(n, a, b, c):
 
 
 if __name__ == "__main__":
-    print(hanoi(3, 1, 2, 3))
+    num = int(input("Which floor should I run the Hanoi Tower?: "))
+    print(hanoi(num, 1, 2, 3))
